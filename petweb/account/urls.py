@@ -15,9 +15,4 @@ urlpatterns = [
     url(r'^detail/(?P<user_pk>\d+)/$', apis.UserDetailUpdateDestroy.as_view()),
     # 유저 회원가입 후 이메일 활성화 뷰
     url(r'^activate/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z_\-]+)/$', apis.Activate.as_view(), name='activate'),
-
-    # 패스워드 수정
-    url(r'^change-password/$', views.change_password, name='change_password'),
-    url(r'^reset-password/$', password-reset, name='reset_password'),
-    url(r'^reset-password/done$', password_reset_done, name='password_reset_done'),
 ]

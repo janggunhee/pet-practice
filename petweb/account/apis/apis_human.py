@@ -12,7 +12,7 @@ from rest_framework.exceptions import APIException
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from petweb.utils.permissions import IsUserOrReadOnly
+from utils.permissions import IsUserOrReadOnly
 from .. import tasks
 from ..serializers import UserSerializer, SignupSerializer, EditSerializer
 
